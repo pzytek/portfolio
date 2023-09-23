@@ -4,7 +4,7 @@ This is my portfolio website, feel free to take a look!
 
 ### Link
 
-https://pzytek.github.io/tetris/src/index.html
+soon
 
 ### Technologies used:
 
