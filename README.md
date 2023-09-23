@@ -4,7 +4,7 @@ This is my portfolio website, feel free to take a look!
 
 ### Link
 
-soon
+https://portfolio-pzytek.vercel.app/
 
 ### Technologies used:
 
