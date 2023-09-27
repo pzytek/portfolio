@@ -10,55 +10,68 @@
     />
     <title>Piotr Zytek - Web developer</title>
     <script defer src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Yvbdrzpxz8rxSPIdU");
+      })();
+    </script>
   </head>
   <body>
     <div class="con">
       <header class="head-con">
-        <h2 class="head-con__h2">Piotr Zytek</h2>
-        <h3 class="head-con__h3">Web developer</h3>
-        <p class="head-con__p">
-          With a passion for creating elegant and responsive web solutions.
-        </p>
-        <ul class="head-list">
-          <a class="head-list__a" href="#about-me">
-            <li class="head-list__li">
-              <span class="head-list__span"></span>about me
-            </li>
-          </a>
-          <a class="head-list__a" href="#projects">
-            <li class="head-list__li">
-              <span class="head-list__span"></span>projects
-            </li>
-          </a>
-          <a class="head-list__a" href="#experience">
-            <li class="head-list__li">
-              <span class="head-list__span"></span>experience
-            </li>
-          </a>
-          <a class="head-list__a" href="#contact">
-            <li class="head-list__li">
-              <span class="head-list__span"></span>contact
-            </li>
-          </a>
-        </ul>
-        <div class="icons">
-          <a
-            href="https://www.linkedin.com/in/piotr-zytek-66a566246/"
-            target="_blank"
-          >
-            <img
-              src="assets/icons/linkedin-square-mono.svg"
-              alt="linkedin icon"
-              class="head-con__icon"
-            />
-          </a>
-          <a href="https://github.com/pzytek" target="_blank">
-            <img
-              src="assets/icons/github-square-mono.svg"
-              alt="github icon"
-              class="head-con__icon"
-            />
-          </a>
+        <div>
+          <h2 class="head-con__h2">Piotr Zytek</h2>
+          <h3 class="head-con__h3">Web developer</h3>
+          <p class="head-con__p">
+            With a passion for creating elegant and responsive web solutions.
+          </p>
+        </div>
+        <div>
+          <ul class="head-list">
+            <a class="head-list__a" href="#about-me">
+              <li class="head-list__li">
+                <span class="head-list__span"></span>about
+              </li>
+            </a>
+            <a class="head-list__a" href="#projects">
+              <li class="head-list__li">
+                <span class="head-list__span"></span>projects
+              </li>
+            </a>
+            <a class="head-list__a" href="#experience">
+              <li class="head-list__li">
+                <span class="head-list__span"></span>experience
+              </li>
+            </a>
+            <a class="head-list__a" href="#contact">
+              <li class="head-list__li">
+                <span class="head-list__span"></span>contact
+              </li>
+            </a>
+          </ul>
+          <div class="icons">
+            <a
+              href="https://www.linkedin.com/in/piotr-zytek-66a566246/"
+              target="_blank"
+            >
+              <img
+                src="assets/icons/linkedin-square-mono.svg"
+                alt="linkedin icon"
+                class="head-con__icon"
+              />
+            </a>
+            <a href="https://github.com/pzytek" target="_blank">
+              <img
+                src="assets/icons/github-square-mono.svg"
+                alt="github icon"
+                class="head-con__icon"
+              />
+            </a>
+          </div>
         </div>
       </header>
       <main class="main-con">
@@ -89,94 +102,99 @@
               target="_blank"
               class="proj-con__a"
             >
-              <div class="proj-con__img-con">
-                <img
-                  class="proj-con__img"
-                  src="assets/images/tetris.jpg"
-                  alt="tetris image"
-                />
-                <div class="overlay">
-                  <span class="proj-con__span">tetris</span>
-                </div>
-              </div>
-              <!-- <p class="proj-con__p">
-                Experience the nostalgia and challenge of the classic Tetris
-                game. Collect points and conquer increasingly challenging
-                levels!
-              </p> -->
+              <span class="proj-con__span">tetris</span>
+              <div class="proj-con__img-con tetris"></div>
             </a>
           </div>
           <div class="proj-con--span2">
             <a
               href="https://tenzies-binec3ngz-pzytek.vercel.app/"
               target="_blank"
-              class="proj-con__a"
             >
-              <div class="proj-con__img-con">
-                <img
-                  class="proj-con__img"
-                  src="assets/images/tenzies.png"
-                  alt="tenzies image"
-                />
-                <div class="overlay">
-                  <span class="proj-con__span">tenzies</span>
-                </div>
-              </div>
+              <span class="proj-con__span">tenzies</span>
+              <div class="proj-con__img-con tenzies"></div>
             </a>
           </div>
           <div class="proj-con">
             <a
               href="https://meme-generator-psi-ebon.vercel.app/"
               target="_blank"
-              class="proj-con__a"
             >
-              <div class="proj-con__img-con">
-                <img
-                  class="proj-con__img"
-                  src="assets/images/meme.png"
-                  alt="meme generator image"
-                />
-                <div class="overlay">
-                  <span class="proj-con__span">meme generator</span>
-                </div>
-              </div>
+              <span class="proj-con__span">meme generator</span>
+              <div class="proj-con__img-con meme"></div>
             </a>
           </div>
           <div class="proj-con">
             <a
               href="https://pzytek.github.io/todo_localstorage/src/index.html"
               target="_blank"
-              class="proj-con__a"
             >
-              <div class="proj-con__img-con">
-                <img
-                  class="proj-con__img"
-                  src="assets/images/todo.jpg"
-                  alt="todo image"
-                />
-                <div class="overlay">
-                  <span class="proj-con__span">todo list</span>
-                </div>
-              </div>
+              <span class="proj-con__span">todo list</span>
+              <div class="proj-con__img-con todo"></div>
             </a>
           </div>
         </section>
         <section class="sec sec-exp" id="experience">
-          <article>
-            <span>SEP 2023 - PRESENT</span><span>self-taught dev</span
-            ><span>stanowisko</span>
+          <article class="art-exp">
+            <span class="art-exp__date">SEP 2023 - PRESENT</span
+            ><span class="art-exp__role">self-taught dev</span
+            ><span class="art-exp__company">stanowisko</span>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
               maxime?
             </p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
+            <ul class="art-exp__list">
+              <li class="art-exp__item">HTML</li>
+              <li class="art-exp__item">CSS</li>
+              <li class="art-exp__item">JavaScript</li>
             </ul>
           </article>
         </section>
-        <section class="sec sec-cont" id="contact"></section>
+        <section class="sec sec-cont" id="contact">
+          <form class="form-con" id="contact-form">
+            <h3 class="form-con__h3">Write me</h3>
+            <input
+              class="form-con__input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              autocomplete="off"
+              required
+              title="Please fill out this field"
+            />
+            <input
+              class="form-con__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-mail"
+              autocomplete="off"
+              required
+              title="Please fill out this field"
+            />
+            <input
+              class="form-con__input"
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+              autocomplete="off"
+              required
+              title="Please fill out this field"
+            />
+            <textarea
+              class="form-con__input form-con__textarea"
+              id="text"
+              name="text"
+              placeholder="Message"
+              autocomplete="off"
+              required
+              title="Please fill out this field"
+            ></textarea>
+            <button class="form-con__button" type="submit">Send</button>
+          </form>
+        </section>
       </main>
     </div>
   </body>

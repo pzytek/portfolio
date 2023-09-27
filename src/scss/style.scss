@@ -28,6 +28,8 @@ body {
 }
 
 .head-con {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 90px 0;
   position: fixed;
@@ -137,76 +139,154 @@ body {
     height: 90vh;
   }
   &-cont {
-    background-color: #45515e;
-    height: 20px;
+    margin: auto;
   }
 }
 
 .proj-con {
+  position: relative;
   object-fit: cover;
   height: 100%;
   width: 100%;
   min-height: 25%;
   max-width: 100%;
-  border: solid 1px #1e365e;
   border-radius: 0.2rem;
+  overflow: hidden;
+  &:hover {
+    & .proj-con__img-con {
+      opacity: 0.55;
+      transform: scale(1.1);
+      transition: 0.6s ease;
+    }
+    & .proj-con__span {
+      opacity: 1;
+    }
+  }
   &--span2 {
     @extend .proj-con;
     grid-column: span 2;
-  }
-  &__a {
-    // border-radius: 1rem;
-    text-decoration: none;
   }
   &__head {
     font-size: 2rem;
   }
   &__img-con {
     position: relative;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
+    text-align: center;
     background-size: cover;
     background-position: center;
-    border-radius: 0.2rem;
-    overflow: hidden;
-    &:hover img {
-      transform: scale(1.1);
-      transition: 0.6s ease-in-out;
-    }
-    &:hover .overlay {
-      display: flex;
-      color: $primary-text-color;
-    }
-    &:hover .proj-con__span {
-      opacity: 1;
-    }
+    transition: 0.5s;
   }
-  &__img {
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
+  &__a {
+    position: relative;
   }
   &__span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $primary-text-color;
     text-transform: uppercase;
-    font-size: 2rem;
+    text-align: center;
+    font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: 0.2rem;
     opacity: 0;
-    transition: opacity 1.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    z-index: 100;
   }
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Przezroczyste tło */
-  display: none;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.art-exp {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  &__date {
+    grid-column: span 2;
+    display: inline-block;
+    font-size: 1.3rem;
+    width: 40%;
+    height: 100%;
+  }
+  &__role {
+    font-size: 1rem;
+  }
+  &__company {
+    font-size: 1rem;
+  }
+  &__list {
+    font-size: 1rem;
+  }
+  &__item {
+    font-size: 1rem;
+  }
+}
+
+.form-con {
+  &__h3 {
+    margin: 0 0 3rem 0;
+    color: $secondary-text-color;
+  }
+  &__input {
+    display: block;
+    height: 50px;
+    width: 60%;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid #404e4d;
+    font-size: 1.5rem;
+    font-family: inherit;
+    margin-bottom: 2.2rem;
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid #91a19f;
+      caret-color: #91a19f;
+    }
+  }
+  &__textarea {
+    height: 120px;
+  }
+  &__button {
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 1.6rem;
+    color: $secondary-text-color;
+    background-color: #b16611;
+    height: 50px;
+    display: block;
+    width: 120px;
+    outline: none;
+    border: none;
+    &:hover {
+      background-color: #a15c0d;
+      cursor: pointer;
+    }
+  }
+}
+
+.tetris {
+  background-image: url(../assets/images/tetris.jpg);
+}
+
+.tenzies {
+  background-image: url(../assets/images/tenzies.png);
+}
+
+.meme {
+  background-image: url(../assets/images/meme.png);
+}
+
+.todo {
+  background-image: url(../assets/images/todo.jpg);
+}
+
+@media (max-width: 800px) {
+  .head-con {
+    flex-direction: row;
+  }
+  .head-list {
+    margin-top: 0;
+  } // tak nie bedzie, trzeba cala sekcje header zafixowac na gorze strony dla tableta i telefonu
 }
