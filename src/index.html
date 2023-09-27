@@ -30,7 +30,7 @@
             With a passion for creating elegant and responsive web solutions.
           </p>
         </div>
-        <div>
+        <div class="head-nav">
           <ul class="head-list">
             <a class="head-list__a" href="#about-me">
               <li class="head-list__li">
@@ -76,6 +76,7 @@
       </header>
       <main class="main-con">
         <section class="sec sec-about" id="about-me">
+          <h4 class="sec__head">about</h4>
           <p class="sec-about__p">
             I'm self-learning front-end developer, with an emphasis on learning
             <strong>JavaScript/React</strong> and experience as a
@@ -95,62 +96,121 @@
             front-end development.
           </p>
         </section>
-        <section class="sec sec-proj" id="projects">
-          <div class="proj-con--span2">
-            <a
-              href="https://pzytek.github.io/tetris/src/index.html"
-              target="_blank"
-              class="proj-con__a"
-            >
-              <span class="proj-con__span">tetris</span>
-              <div class="proj-con__img-con tetris"></div>
-            </a>
-          </div>
-          <div class="proj-con--span2">
-            <a
-              href="https://tenzies-binec3ngz-pzytek.vercel.app/"
-              target="_blank"
-            >
-              <span class="proj-con__span">tenzies</span>
-              <div class="proj-con__img-con tenzies"></div>
-            </a>
-          </div>
-          <div class="proj-con">
-            <a
-              href="https://meme-generator-psi-ebon.vercel.app/"
-              target="_blank"
-            >
-              <span class="proj-con__span">meme generator</span>
-              <div class="proj-con__img-con meme"></div>
-            </a>
-          </div>
-          <div class="proj-con">
-            <a
-              href="https://pzytek.github.io/todo_localstorage/src/index.html"
-              target="_blank"
-            >
-              <span class="proj-con__span">todo list</span>
-              <div class="proj-con__img-con todo"></div>
-            </a>
+        <section>
+          <h4 class="sec__head">projects</h4>
+          <div class="sec sec-proj" id="projects">
+            <div class="proj-con--span2">
+              <a
+                href="https://pzytek.github.io/tetris/src/index.html"
+                target="_blank"
+                class="proj-con__a"
+              >
+                <span class="proj-con__span">tetris</span>
+                <div class="proj-con__img-con tetris"></div>
+              </a>
+            </div>
+            <div class="proj-con--span2">
+              <a
+                href="https://tenzies-binec3ngz-pzytek.vercel.app/"
+                target="_blank"
+              >
+                <span class="proj-con__span">tenzies</span>
+                <div class="proj-con__img-con tenzies"></div>
+              </a>
+            </div>
+            <div class="proj-con">
+              <a
+                href="https://meme-generator-psi-ebon.vercel.app/"
+                target="_blank"
+              >
+                <span class="proj-con__span">meme generator</span>
+                <div class="proj-con__img-con meme"></div>
+              </a>
+            </div>
+            <div class="proj-con">
+              <a
+                href="https://pzytek.github.io/todo_localstorage/src/index.html"
+                target="_blank"
+              >
+                <span class="proj-con__span">todo list</span>
+                <div class="proj-con__img-con todo"></div>
+              </a>
+            </div>
           </div>
         </section>
-        <section class="sec sec-exp" id="experience">
-          <article class="art-exp">
-            <span class="art-exp__date">SEP 2023 - PRESENT</span
-            ><span class="art-exp__role">self-taught dev</span
-            ><span class="art-exp__company">stanowisko</span>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
-              maxime?
-            </p>
-            <ul class="art-exp__list">
-              <li class="art-exp__item">HTML</li>
-              <li class="art-exp__item">CSS</li>
-              <li class="art-exp__item">JavaScript</li>
-            </ul>
-          </article>
+        <section>
+          <h4 class="sec__head">experience</h4>
+          <div class="sec sec-exp" id="experience">
+            <article class="art-exp">
+              <span class="art-exp__date">JAN 2023 — PRESENT</span>
+
+              <div class="art-exp__content">
+                <span class="art-exp__role">Web developer</span
+                ><span class="art-exp__company">-</span>
+                <p class="art-exp__description">
+                  Learning web development, including creating my own websites
+                  and applications. Currently, I am deepening my knowledge of
+                  full-stack development while working on a MERN project.
+                </p>
+                <ul class="art-exp__list">
+                  <li class="art-exp__item">HTML</li>
+                  <li class="art-exp__item">CSS</li>
+                  <li class="art-exp__item">SASS</li>
+                  <li class="art-exp__item">JavaScript</li>
+                  <li class="art-exp__item">TypeScript</li>
+                  <li class="art-exp__item">React</li>
+                  <li class="art-exp__item">Node</li>
+                </ul>
+              </div>
+            </article>
+            <article class="art-exp">
+              <span class="art-exp__date">JAN 2023 — PRESENT</span>
+
+              <div class="art-exp__content">
+                <span class="art-exp__role">Automation Engineer</span
+                ><span class="art-exp__company">Freelance contracts</span>
+                <p class="art-exp__description">
+                  Programming of logic controllers and industrial robots.
+                  Creating visualizations for operator panels.
+                </p>
+                <ul class="art-exp__list">
+                  <li class="art-exp__item">Siemens PLC</li>
+                  <li class="art-exp__item">Siemens HMI</li>
+                  <li class="art-exp__item">ABB Robots</li>
+                </ul>
+              </div>
+            </article>
+            <article class="art-exp">
+              <span class="art-exp__date">DEC 2020 — DEC 2022</span>
+
+              <div class="art-exp__content">
+                <span class="art-exp__role">Automation Engineer</span
+                ><span class="art-exp__company">FSM Poland</span>
+                <p class="art-exp__description">
+                  Working at an implementation company in the automotive
+                  industry. The main tasks include creating operator panel
+                  interfaces and programming logical controllers, as well as
+                  industrial robots.
+                </p>
+                <ul class="art-exp__list">
+                  <li class="art-exp__item">Siemens PLC</li>
+                  <li class="art-exp__item">Siemens HMI</li>
+                  <li class="art-exp__item">ABB Robots</li>
+                </ul>
+              </div>
+            </article>
+            <span>
+              <a
+                href="../src/assets/documents/cv.pdf"
+                target="_blank"
+                class="form-con__cv"
+                >View my CV</a
+              >
+            </span>
+          </div>
         </section>
         <section class="sec sec-cont" id="contact">
+          <h4 class="sec__head">contact</h4>
           <form class="form-con" id="contact-form">
             <h3 class="form-con__h3">Write me</h3>
             <input
