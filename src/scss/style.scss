@@ -24,7 +24,6 @@ body {
 .con {
   display: flex;
   flex-direction: column;
-  height: 300vh; //temporary
   width: 80%;
   margin: auto;
 }
@@ -211,6 +210,7 @@ body {
 .art-exp {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  margin-bottom: 1.5rem;
   &__content {
     grid-column: span 6;
   }
@@ -263,6 +263,7 @@ body {
     font-size: 1.5rem;
     font-family: inherit;
     margin-bottom: 2.2rem;
+    color: $secondary-text-color;
     &:focus {
       outline: none;
       border-bottom: 1px solid #91a19f;
