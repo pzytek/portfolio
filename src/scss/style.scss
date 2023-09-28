@@ -147,6 +147,7 @@ body {
   }
   &-cont {
     margin: auto;
+    margin-bottom: 200px;
   }
 }
 
@@ -321,6 +322,12 @@ body {
       cursor: pointer;
     }
   }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: $secondary-text-color;
 }
 
 .tetris {
